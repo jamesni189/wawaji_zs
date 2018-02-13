@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_appeal_dlg_bottom_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_invite_circle"
+            style="@style/appeal_dlg_tv"
+            android:text="微信朋友圈"/>
+
+        <View
+            style="@style/common_divider_horizontal_gray"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_invite_wechat"
+            style="@style/appeal_dlg_tv"
+            android:text="微信好友"/>
+
+        <View
+            style="@style/common_divider_horizontal_gray"
+            android:visibility="gone"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_invite_qq"
+            style="@style/appeal_dlg_tv"
+            android:visibility="gone"
+            android:text="手机QQ"/>
+
+        <View
+            style="@style/common_divider_horizontal_gray"
+            android:visibility="gone"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_invite_qzone"
+            android:visibility="gone"
+            style="@style/appeal_dlg_tv"
+            android:text="QQ空间"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_invite_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_appeal_dlg_bottom_bg"
+        android:padding="@dimen/common_vertical_padding_normal"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/common_text_blue"
+        android:textSize="@dimen/common_text_size_large"/>
+
+</LinearLayout>

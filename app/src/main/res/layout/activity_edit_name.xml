@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_white"
+    android:orientation="vertical">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/common_bg_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ln_personal_info_nickname"
+        style="@style/common_item_layout">
+
+        <EditText
+            style="@style/common_item_left_tv"
+            android:background="@null"
+            android:maxLines="1"
+            android:maxWidth="200dp"
+            android:minWidth="100dp"
+            android:textColor="@color/common_text_3"
+            android:textCursorDrawable="@drawable/shape_edit_cursor"
+            android:gravity="left"
+            android:id="@+id/nameEdt"
+            android:text="昵称"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_gray"/>
+</LinearLayout>

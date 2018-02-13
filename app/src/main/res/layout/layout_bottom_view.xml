@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ln_live_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_login_title_color2"
+        android:gravity="right">
+
+        <TextView
+            android:drawableLeft="@mipmap/ic_price"
+            android:id="@+id/tv_live_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_normal"  />
+    </LinearLayout>
+    <!--底部未开始游戏layout--><!--android:visibility="invisible"-->
+    <LinearLayout
+        android:id="@+id/ln_live_start_container"
+        android:layout_below="@+id/ln_live_share"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@color/app_login_title_color"
+        >
+
+        <LinearLayout
+            android:id="@+id/ln_live_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/yz_live_bottom_detail"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:text="发言"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_live_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/yz_live_start_game_icon"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_live_game_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@mipmap/ic_price"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_start_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="开始游戏"
+                    android:textColor="#ff336a" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_live_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/yz_live_bottom_detail"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="3dp"
+                android:drawableTop="@mipmap/live_chongzhi"
+                android:text="充值"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/record_line"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@+id/ln_live_start_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_grab_record"
+            android:text="最近抓中记录"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.ydd.pockettoycatcherrwz.view.HorizontialListView
+            android:id="@+id/lv_grab_records_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_pic"
+        android:layout_below="@+id/record_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

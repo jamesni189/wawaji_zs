@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutoScrollViewPager">
+        <attr name="height_ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NJRoundedCPImageView">
+        <attr name="frame_rounder_height_ratio" format="float"/>
+        <attr name="android:scaleType"/>
+        <attr name="frame_border_width" format="dimension"/>
+        <attr name="frame_border_color" format="color"/>
+        <attr name="frame_oval" format="boolean"/>
+        <attr name="frame_corner_radius" format="dimension"/>
+        <attr name="frame_corner_radius_top_left" format="dimension"/>
+        <attr name="frame_corner_radius_top_right" format="dimension"/>
+        <attr name="frame_corner_radius_bottom_left" format="dimension"/>
+        <attr name="frame_corner_radius_bottom_right" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 自定义控件的名称 -->
+    <declare-styleable name="StrokeTextView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference"/>
+        <attr name="innnerColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FixedRatioRelativeLayout">
+        <attr name="ratio" format="float"/>
+        <attr name="adaptDensity" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundBGRelativeLayout">
+        <attr name="custom_background" format="reference"></attr>
+        <attr name="corner_radius" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="ToggleButton">
+        <attr name="tbBorderWidth" format="dimension"/>
+        <attr name="tbOffBorderColor" format="reference|color"/>
+        <attr name="tbOffColor" format="reference|color"/>
+        <attr name="tbOnColor" format="reference|color"/>
+        <attr name="tbSpotColor" format="reference|color"/>
+        <attr name="tbAnimate" format="reference|boolean"/>
+        <attr name="tbAsDefaultOn" format="reference|boolean"/>
+    </declare-styleable>
+</resources>

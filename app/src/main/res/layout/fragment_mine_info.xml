@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.fragment.MineInfoFragment">
+
+   <!--<!pockettoycatcherrwzrwzcher.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        style="@style/common_title_bar" />&ndash;&gt;-->
+    <LinearLayout
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+       android:gravity="center"
+        android:background="@color/app_login_title_color"
+        android:layout_height="50dp">
+        <TextView
+            android:text="我的"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_person"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/common_title_bar"
+        android:layout_weight="1"
+        android:background="@color/app_login_title_color"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/user_main_persson"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical">
+
+            <com.ydd.pockettoycatcherrwz.widget.RoundedCPImageView
+                android:id="@+id/iv_dlg_personal_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/user_mian_icon_new_1"
+                app:frame_oval="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_dlg_personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="暂无昵称"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/common_text_size_large" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_grab_recorded_num"
+                        android:text="抓中  "
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/tv_grab_postion"
+                        android:text="总排位   "
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/user_main_pic_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/user_main_vip" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/user_mian_login_now"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/user_main_islogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="立即登陆"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_mian_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+
+                android:layout_weight="3"
+                android:gravity="center|right">
+
+                <ImageView
+                    style="@style/common_item_right_arrow_2"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/image_person"
+        >
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/myscrollview_usermian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/scroll_view_addview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

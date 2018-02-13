@@ -1,0 +1,67 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">任我抓</string>
+
+    <string name="send_reply">sendCustomCommand-Apply(<xliff:g id="value">%1$s</xliff:g>):&#160;</string>
+    <string name="rsp_reply">onSendCustomCommand-Apply(<xliff:g id="value">%1$s</xliff:g>), errorCode:</string>
+    <string name="send_reply_recv_game_ready">sendCustomCommand-ReplyRecvGameReady:&#160;</string>
+    <string name="rsp_reply_recv_game_ready">onSendCustomCommand-ReplyRecvGameReady, errorCode:</string>
+    <string name="send_confirm_board">sendCustomCommand-ConfirmBoard(<xliff:g id="value">%1$s</xliff:g>):&#160;</string>
+    <string name="rsp_confirm_board">onSendCustomCommand-ConfirmBoard(<xliff:g id="value">%1$s</xliff:g>), errorCode:</string>
+
+    <string name="send_grub">sendCustomCommand-Grub(<xliff:g id="value">%1$s</xliff:g>):&#160;</string>
+    <string name="rsp_grub">onSendCustomCommand-Grub(<xliff:g id="value">%1$s</xliff:g>), errorCode:</string>
+
+    <!-- 网络相关 -->
+    <string name="network_invalide">亲，数据加载失败，请检查网络哦！</string>
+    <string name="network_error">网络又开小差了，请稍后再试！</string>
+    <string name="network_error_common">网络又开小差了，请稍后再试！</string>
+    <string name="network_error_format_error">数据格式不正确，请检查网络</string>
+    <string name="network_timeout">网络又开小差了，请稍后再试！</string>
+    <string name="unknown_error">未知错误</string>
+
+    <!--关于我们-->
+    <string name="about_us_comment">&#8194;&#8194;&#8194;&#8194;娃娃机，又称选物贩卖，台湾俗称夹娃娃机，香港称夹公仔机，在国内也叫抓娃娃机，为一种源于日本的电子游戏。日语原名UFO CATCHER。娃娃机属于礼品贩卖机，是大型游戏机里面较简单的一种。</string>
+
+    <!--抓取详情-->
+    <string name="grab_detail_appeal_comment">如在游戏中遇到以下的问题：可以申请退还钻石\n1.游戏中工作人员补货\n2.没能成功上机就扣币\n3.爪子没反应，无法移动\n4.其他原因</string>
+    <!--抓取详情-->
+    <string name="grab_detail_appeal_comment_2">如在游戏中遇到以下的问题：可以申诉\n1.抓取成功系统判定失败\n2.抓取成功系统没有反应</string>
+
+    <!--签到说明-->
+    <string name="sign_comment">连续签到7天，可领取钻石。每天00:00自动刷新，没有连续签到将重新开始</string>
+
+    <!--邀请好友说明-->
+    <string name="invite_comment"><font color="#fd485c">奖励规则：</font>\n邀请好友加入 ， 好友兑换邀请码，双方将获得%s钻石，最多获得300钻石。</string>
+
+    <!--抓取结果对话框-->
+    <string name="dlg_grab_result_success">太棒了！抓到娃娃了耶！</string>
+    <string name="dlg_grab_result_failed">很遗憾！差点就抓到了！\n再抓一次！</string>
+
+    <string name="text_space">&#8194;&#8194;&#8194;</string>
+
+    <!--订单充值-->
+    <string name="sure_orders">%s，从开通当日起每天可领取20钻，持续时间为7天。\n \n 领取说明：\n1、个人中心→会员中心→领取钻石\n2、首页→右上角福利社→领取钻石
+    \n3、当日钻石必须当日领取，逾期失效</string>
+
+    <!--微信登录code-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">请求被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="errcode_usercancle">用户取消</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--用户签到信息-->
+    <string name="sign_middle_text">&#8194;&#8194;&#8194;&#8194;每天签到获得奖励，连续签到奖励多多。每天00：00自动刷新，漏签将重新开始</string>
+
+
+    <string name="xscrollview_header_hint_normal">下拉刷新</string>
+    <string name="xscrollview_header_hint_ready">松开刷新</string>
+    <string name="xscrollview_header_hint_loading">加载数据...</string>
+    <string name="xscrollview_header_last_time">最近刷新</string>
+    <string name="xscrollview_footer_hint_normal">加载更多</string>
+    <string name="xscrollview_footer_hint_ready">松开加载</string>
+</resources>

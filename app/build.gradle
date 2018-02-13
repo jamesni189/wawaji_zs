@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ydd.pockettoycatcherrwz"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 15
+        versionName "1.5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'armeabi-v7a', 'x86_64'
+//            universalApk true
+//        }
+//    }
+
+    /*  sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir 'src/main/jniLibs'
+    }*/
+    sourceSets {
+        main {
+            jniLibs.srcDirs 'src/main/jniLibs'
+        }
+    }
+
+    signingConfigs {
+        // your debug keystore
+        debug {
+            keyAlias 'key0'
+            keyPassword 'ydd123456'
+            storeFile file("yddrwz.jks")
+            storePassword 'ydd123456'
+            //  storePassword 'ydd123456'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        productFlavors {
+            baidu {}
+            myapp {}
+            appchina {}
+            anzhi {}
+            eoemarket {}
+            sogou {}
+            oppo {}
+            huawei {}
+            lenovo {}
+            meizu {}
+            xiaomi {}
+            taobao {}
+            jinli {}
+            letv {}
+            vivo {}
+            tongyong {}
+            tencent {}
+            _360 {}
+//            _360 {
+//                manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
+//            }
+
+        }
+
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+}
+
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile 'homhomlin.lib:apsts:1.8.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'liji.library.dev:citypickerview:2.1.0'
+    //    compile 'liji.library.dev:citypickerview:2.0.1'
+    compile project(':pulltorefresh')
+    compile 'org.greenrobot:eventbus:3.1.0-RC'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile 'com.github.tony19:logback-android-core:1.1.1-4'
+    compile('com.github.tony19:logback-android-classic:1.1.1-4') {
+        // workaround issue #73
+        exclude group: 'com.google.android', module: 'android'
+    }
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.6.3'
+    //b站弹幕库
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.9.16'
+    compile files('libs/open_sdk_r5886_lite.jar')
+    compile files('libs/jcore-android-1.1.7.jar')
+    compile files('libs/jpush-android-3.0.9.jar')
+    compile files('libs/alipaySdk-20170922.jar')
+    compile files('libs/zegoliveroom.jar')
+
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+
+}

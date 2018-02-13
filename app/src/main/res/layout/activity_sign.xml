@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/common_text_white"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.home.SignActivity">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pullscroll_fresh"
+        android:layout_below="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:background="@mipmap/user_sign_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sign_main_visabliity"
+
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/adressdawable"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:gravity="bottom|center_horizontal">
+<!-- android:background="@mipmap/sign_text_nosign"-->
+                    <TextView
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/sign_text_suresign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="立即签到"
+                        android:textColor="@color/common_text_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.ydd.pockettoycatcher.ui.home.SignItem_newView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/sign_SignItem_newView_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.ydd.pockettoycatcher.ui.home.SignItem_newView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/sign_middle_text"
+                    android:textColor="#794809" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:id="@+id/sign_addliear_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

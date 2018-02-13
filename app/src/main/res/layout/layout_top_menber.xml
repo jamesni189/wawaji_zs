@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_toLeftOf="@+id/tv_live_persons_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_black30"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_live_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                />
+
+            <com.ydd.pockettoycatcherrwz.widget.RoundImageView
+                android:id="@+id/iv_live_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/iv_live_close"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/pic_zww_default" />
+
+        </LinearLayout>
+
+        <com.ydd.pockettoycatcherrwz.view.HorizontialListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"/>
+
+
+    </LinearLayout>
+    <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+        android:id="@+id/tv_live_persons_num"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="1人"
+        android:textSize="@dimen/common_text_size_normal"
+        app:innnerColor="@color/white"
+        app:outerColor="@color/black" />
+
+</RelativeLayout>

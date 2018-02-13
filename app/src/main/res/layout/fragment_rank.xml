@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.fragment.RankFragment">
+
+    <RadioGroup
+        android:id="@+id/radioGrop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/rb_month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="月榜"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:checked="true"
+        android:textColor="@drawable/color_radiobutton"
+        android:background="@drawable/rb_selector_left"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_total"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="总榜"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@drawable/color_radiobutton"
+        android:background="@drawable/rb_selector_right"
+       />
+    </RadioGroup>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_rank"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

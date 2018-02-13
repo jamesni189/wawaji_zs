@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.fragment.WawaBoxWebFragment">
+
+   <RelativeLayout
+       android:background="@color/app_login_title_color"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+      <TextView
+          android:id="@+id/tv_title"
+          android:textSize="16dp"
+          android:text="娃娃盒"
+          android:gravity="center"
+          android:layout_centerInParent="true"
+          android:textColor="@color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent" />
+   </RelativeLayout>
+
+   <com.github.lzyzsd.jsbridge.BridgeWebView
+       android:id="@+id/wawaweb"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</LinearLayout>

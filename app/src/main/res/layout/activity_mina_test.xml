@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_test_hb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="心跳"/>
+
+    <Button
+        android:id="@+id/btn_test_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接服务器"/>
+
+    <Button
+        android:id="@+id/btn_test_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始"/>
+
+    <Button
+        android:id="@+id/btn_test_move_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="front"/>
+
+    <Button
+        android:id="@+id/btn_test_move_behind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="后"/>
+
+    <Button
+        android:id="@+id/btn_test_move_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="左"/>
+
+    <Button
+        android:id="@+id/btn_test_move_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="右"/>
+
+    <Button
+        android:id="@+id/btn_test_grab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="抓取"/>
+
+    <Button
+        android:id="@+id/btn_test_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直播"/>
+
+</LinearLayout>

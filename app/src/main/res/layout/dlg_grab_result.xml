@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/content_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/shape_home_border"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/share_iv"
+            android:src="@mipmap/icon_share"
+            android:layout_gravity="right"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_dlg_grab_result_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="dddddddd"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/tv_dlg_grab_result_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/iv_dlg_grab_result_toy"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/bg_sunshine"
+                android:scaleType="fitCenter"/>
+            <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_dlg_grab_result_content2"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+           android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                android:id="@+id/btn_dlg_grab_result_left"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_bar_bottom_height"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/bg_red_btn"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/common_text_white"
+                android:textSize="@dimen/common_text_size_normal"/>
+
+            <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                android:id="@+id/btn_dlg_grab_result_right"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@mipmap/bg_red_btn"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="再次挑战"
+                android:textColor="@color/common_text_white"
+                android:textSize="@dimen/common_text_size_normal"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dlg_grab_result_count"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size_smallest"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_dlg_grab_result_cancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+       android:layout_below="@+id/content_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_cancel"/>
+</RelativeLayout>

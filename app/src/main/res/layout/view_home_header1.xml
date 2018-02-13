@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.ydd.pockettoycatcherrwz.widget.FixedRatioRelativeLayout
+        android:id="@+id/fix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ratio="0.36">
+
+        <com.ydd.pockettoycatcherrwz.widget.AutoScrollViewPager
+            android:id="@+id/vp_home_ads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ydd.pockettoycatcherrwz.widget.CirclePageIndicator
+            android:id="@+id/view_home_ads_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vp_home_ads"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+    </com.ydd.pockettoycatcherrwz.widget.FixedRatioRelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_home_head_temp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="170dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/pic_default"/>-->
+
+
+    <LinearLayout
+        android:background="@color/common_bg_white"
+        android:id="@+id/iv_dlg_personal_linear"
+        android:visibility="visible"
+        android:paddingTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fix"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <LinearLayout style="@style/ln_dlg_personal_bottom"
+            android:id="@+id/iv_dlg_personal_grab_sin"
+            >
+
+            <ImageView
+                style="@style/iv_dlg_personal_bottom"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                style="@style/tv_dlg_personal_bottom"
+                android:textSize="11sp"
+                android:text="福利中心" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ln_dlg_personal_bottom"
+            android:id="@+id/iv_dlg_personal_charge_invite">
+
+            <ImageView
+                style="@style/iv_dlg_personal_bottom"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                style="@style/tv_dlg_personal_bottom"
+                android:textSize="11sp"
+                android:text="排行榜" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ln_dlg_personal_bottom"
+            android:id="@+id/iv_dlg_personal_wawabox">
+
+            <ImageView
+
+                style="@style/iv_dlg_personal_bottom"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                style="@style/tv_dlg_personal_bottom"
+                android:textSize="11sp"
+                android:text="积分抽奖" />
+        </LinearLayout>
+        <LinearLayout style="@style/ln_dlg_personal_bottom"
+            android:id="@+id/iv_dlg_personal_integral">
+
+            <ImageView
+
+                style="@style/iv_dlg_personal_bottom"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                style="@style/tv_dlg_personal_bottom"
+                android:textSize="11sp"
+                android:text="充值中心" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        style="@style/common_item_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/adressdawable">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_price" />
+
+        <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+            android:id="@+id/rechange_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_recharge_confirm_money"
+            style="@style/common_item_left_tv"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/common_text_6" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_recharge_confirm_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_common_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rechange_text_dec_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="#999999" />
+</RelativeLayout>

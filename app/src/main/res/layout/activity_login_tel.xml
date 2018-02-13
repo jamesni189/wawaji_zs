@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_bg_white"
+              android:orientation="vertical">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/wwic"/>
+    </RelativeLayout>
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/login_tel_icon"
+        android:id="@+id/et_login_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/common_text_black"
+        android:textCursorDrawable="@drawable/shape_edit_cursor"
+        android:textSize="@dimen/common_text_size_normal"/>
+
+    <View
+        style="@style/common_divider_horizontal_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/login_tel_passwords"
+            android:id="@+id/et_login_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:hint="验证码"
+            android:maxLines="1"
+            android:textColor="@color/common_text_black"
+            android:textCursorDrawable="@drawable/shape_edit_cursor"
+            android:textSize="@dimen/common_text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_login_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="获取验证码"
+            android:textColor="@color/app_login_title_color"
+            android:textSize="@dimen/common_text_size_normal"/>
+    </LinearLayout>
+
+    <View
+        style="@style/common_divider_horizontal_gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_login_tip"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="14sp"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/iv_login"
+            android:layout_below="@+id/tv_login_tip"
+            android:textColor="@color/common_text_white"
+            android:background="@drawable/shape_login"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="登录"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

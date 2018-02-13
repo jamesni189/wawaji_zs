@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!--通用背景色-->
+    <color name="common_bg_red">#ED749A</color>
+    <color name="common_bg_white">#FFFFFF</color>
+    <color name="common_bg_gray">#EFEFEF</color>
+    <color name="common_bg_blue">#53BCFF</color>
+
+    <color name="common_bg_green"> #3EB028</color>
+    <!--字体颜色-->
+    <color name="common_text_red">#fd485c</color>
+    <color name="common_text_white">#FFFFFF</color>
+    <color name="common_text_black">#000000</color>
+    <color name="common_text_gray">#CCCCCC</color>
+    <color name="common_text_green">#16832F</color>
+    <color name="common_text_blue">#0054FE</color>
+    <color name="common_text_gray_dark">#858585</color>
+    <color name="common_text_3">#333333</color>
+    <color name="common_text_6">#666666</color>
+    <color name="common_text_a">#aaaaaa</color>
+    <color name="common_text_white_1">#B3FFFFFF</color>
+    <color name="common_line_gray">#F5F5F5</color>
+
+    <!--抓取页-->
+    <color name="live_transparent_darker">#33000000</color>
+
+    <color name="transparent_white">#66FFFFFF</color>
+    <color name="app_title_color">#FD485C</color>
+<!--签到字体颜色-->
+    <color name="sign_title_color">#733CF2</color>
+    <color name="sign_addview_text_back">#fd8819</color>
+    <color name="sign_addview_text_yellow">#FFD700</color>
+    <color name="app_common_color">#fd485c</color>
+    <color name="app_login_title_color">#00c26f</color>
+    <color name="app_login_title_color2">#00c28f</color>
+    <color name="app_login_title_yellow">#FDD244</color>
+    <color name="app_login_title_blue">#90BEF4</color>
+
+
+    <color name="qianhui">#E0E0E0</color>
+</resources>

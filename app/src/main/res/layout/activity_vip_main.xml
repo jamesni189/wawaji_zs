@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.home.Vip_mainActivity">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        style="@style/common_title_bar" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_below="@+id/common_title_bar"
+        android:id="@+id/myscrollview_usermian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/vip_linearlayout_mian"
+                android:background="#F0EFF4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/vip_linearlayout_mian"
+                android:id="@+id/user_sign_vip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        style="@style/common_item_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/user_main_lin1">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@mipmap/user_mian_login_1" />
+
+                        <TextView
+                            style="@style/common_item_left_tv"
+                            android:paddingLeft="15dp"
+                            android:text="福利中心"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            style="@style/common_item_left_tv"
+                            android:layout_marginRight="10dp"
+                            android:text="更多福利"
+                            android:layout_weight="0.5"
+                            android:textColor="#666666"
+                            android:gravity="right"
+                            android:textSize="13sp" />
+                        <ImageView style="@style/common_item_right_arrow" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

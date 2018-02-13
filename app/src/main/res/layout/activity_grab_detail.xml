@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:orientation="vertical">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        style="@style/common_title_bar" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/ln_grab_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:background="@drawable/adressdawable"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_grab_detail_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/common_vertical_padding_normal"
+                        android:paddingLeft="@dimen/common_horizontal_padding_normal"
+                        android:paddingTop="@dimen/common_vertical_padding_normal"
+                        android:textColor="@color/common_text_black"
+                        android:textSize="@dimen/common_text_size_normal" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/common_horizontal_padding_normal">
+
+                    <View style="@style/common_divider_horizontal_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/toy_size"
+                        android:layout_height="@dimen/toy_size">
+
+                        <com.ydd.pockettoycatcherrwz.widget.XCRoundRectImageView
+                            android:id="@+id/iv_grab_detail_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/pic_zww_default" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/ic_play" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/common_horizontal_padding_normal"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_grab_detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/common_text_size_normal" />
+
+
+                        <TextView
+                            android:id="@+id/tv_grab_detail_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_grab_detail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/common_text_size_small" />
+                    </LinearLayout>
+
+                    <ImageView style="@style/common_item_right_arrow"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_grab_detail_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/common_space_divider_gray" />
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    style="@style/common_white_padding_layout"
+                    android:background="@drawable/adressdawable"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_grab_detail_reason_title"
+                        style="@style/common_black_normal_tv"
+                        android:text="申诉理由" />
+
+                    <TextView
+                        android:id="@+id/tv_grab_detail_reason"
+                        style="@style/common_black_normal_tv"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/common_text_blue" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_grab_detail_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/common_space_divider_gray" />
+
+                <LinearLayout
+                    style="@style/common_white_padding_layout"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_grab_detail_result_title"
+                        style="@style/common_black_normal_tv"
+                        android:background="@drawable/adressdawable"
+                        android:text="处理结果" />
+
+                    <TextView
+                        android:id="@+id/tv_grab_detail_result"
+                        style="@style/common_black_normal_tv"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/common_bg_red" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_grab_detail_appeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="35dp"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/btn_grab_detail_appeal"
+                    android:textColor="@color/common_text_white"
+                    android:background="@drawable/usermain_pressbutton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="申请退钻"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingLeft="@dimen/common_horizontal_padding_normal"
+                    android:paddingRight="@dimen/common_horizontal_padding_normal"
+                    android:text="@string/grab_detail_appeal_comment"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/common_text_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/ln_grab_detail_appeal_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+                <Button
+                    android:textColor="@color/common_text_white"
+                    android:id="@+id/btn_grab_detail_appeal_1"
+                    android:background="@drawable/usermain_pressbutton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="申请娃娃"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingLeft="@dimen/common_horizontal_padding_normal"
+                    android:paddingRight="@dimen/common_horizontal_padding_normal"
+                    android:text="@string/grab_detail_appeal_comment_2"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/common_text_size_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

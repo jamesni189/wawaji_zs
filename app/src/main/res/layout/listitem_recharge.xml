@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_recharge_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_gray_stroke"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_recharge_item_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_price"/>
+
+        <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+            android:id="@+id/tv_recharge_item_num"
+            style="@style/common_black_normal_tv"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_recharge_item_icon"/>
+
+        <TextView
+            android:id="@+id/tv_recharge_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/common_text_red"
+            android:textSize="@dimen/common_text_size_small"/>
+
+        <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+            android:id="@+id/tv_recharge_item_price"
+            style="@style/common_black_normal_tv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

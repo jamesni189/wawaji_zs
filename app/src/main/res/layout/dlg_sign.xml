@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/tv_dlg_sign_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签到"
+        android:textColor="@color/common_text_black"
+        android:textSize="@dimen/common_text_size_large"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/sign_comment"
+        android:textColor="@color/common_text_6"
+        android:textSize="@dimen/common_text_size_small"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.ydd.pockettoycatcherrwz.ui.home.SignItemView
+            android:id="@+id/view_sign_dlg_item_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+            android:id="@+id/btn_dlg_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@mipmap/bg_yellow_btn"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="点击签到"
+            android:textSize="@dimen/common_text_size_normal"/>
+    </LinearLayout>
+
+</LinearLayout>

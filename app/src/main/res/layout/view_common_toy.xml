@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/common_horizontal_padding_normal">
+
+    <LinearLayout
+        android:id="@+id/ln_item_toy_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="@dimen/common_horizontal_padding_normal"
+        android:paddingTop="8dp">
+
+        <com.ydd.pockettoycatcherrwz.widget.XCRoundRectImageView
+            android:id="@+id/iv_toy_img"
+            android:layout_width="@dimen/toy_size"
+            android:layout_height="@dimen/toy_size"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_gravity="start"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_toy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_text_black" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/tv_toy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_text_black"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:visibility="invisible"-->
+        <!--android:id="@+id/view_toy_divider"-->
+        <!--style="@style/common_divider_horizontal_gray"/>-->
+</LinearLayout>

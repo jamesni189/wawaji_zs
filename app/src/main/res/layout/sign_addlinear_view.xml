@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_text_white">
+
+    <LinearLayout
+        android:id="@+id/addview_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/get_points_day_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/get_points_day_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/get_points_day_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#999999"
+                android:id="@+id/get_points_day_esc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/get_points_day_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/sign_addview_text_back" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--  android:background="@drawable/sign_addlinear_text_draw"-->
+    <View
+
+        android:id="@+id/getpoints_lines_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addview_linear"
+        android:background="@mipmap/sign_lines_vip_blue"
+        android:layerType="software"
+        android:visibility="gone" />
+    <!--sign_lines_vip_blue-->
+    <View
+        android:id="@+id/getpoints_lines_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/addview_linear"
+        android:background="@color/common_bg_gray"
+        android:layerType="software"
+        android:visibility="gone" />
+</RelativeLayout>

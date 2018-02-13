@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item android:drawable="@mipmap/live_button_grab_press" android:state_selected="false"/>-->
+    <item android:drawable="@mipmap/live_buttom_grab" android:state_selected="false"/>
+    <item android:drawable="@mipmap/live_buttom_grab"/>
+
+</selector>

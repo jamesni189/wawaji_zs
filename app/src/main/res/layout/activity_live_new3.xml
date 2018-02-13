@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/line_live"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:keepScreenOn="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_live_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pic_live_loading">
+
+        <TextureView
+            android:id="@+id/textureview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <TextureView
+            android:id="@+id/textureview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_live_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pic_live_loading"
+        android:visibility="gone" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--维护页面-->
+        <LinearLayout
+            android:id="@+id/ln_live_error_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_live_error"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/pic_live_error" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="当前娃娃机正在维护中～"
+                android:textColor="@color/common_text_black"
+                android:textSize="@dimen/common_text_size_small" />
+        </LinearLayout>
+
+        <!--顶部布局-->
+        <RelativeLayout
+            android:id="@+id/rl_live_above"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--   android:background="@drawable/iv_live_close_select"-->
+            <ImageView
+                android:id="@+id/iv_live_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                />
+<!-- android:src="@mipmap/yz_liveactivity_close"-->
+            <com.ydd.pockettoycatcherrwz.widget.RoundImageView
+                android:id="@+id/iv_live_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/iv_live_close"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/pic_zww_default" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="当前房间人数"
+                    android:visibility="gone"
+                    android:textSize="@dimen/common_text_size_normal"
+                    app:innnerColor="@color/white"
+                    app:outerColor="@color/black" />
+
+                <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                    android:id="@+id/tv_live_persons_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="@dimen/common_text_size_normal"
+                    app:innnerColor="@color/white"
+                    app:outerColor="@color/black" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_live_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/selector_live_camera" />
+
+        <!--弹幕-->
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/view_live_danmu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/iv_live_refresh"
+            android:layout_below="@id/rl_live_above"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp" />
+
+        <!--抓娃娃操作layout-->
+        <LinearLayout
+            android:id="@+id/ln_live_grab_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="#ff4564"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:visibility="invisible"
+            >
+<!---->
+            <ImageView
+                android:id="@+id/iv_live_grab_left"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_live_left" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_live_grab_top"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_live_top" />
+
+                <ImageView
+                    android:id="@+id/iv_live_grab_bottom"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="45dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_live_bottom" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_live_grab_right"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_live_right" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/iv_live_grab"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_live_grab" />
+
+                <com.ydd.pockettoycatcherrwz.widget.StrokeTextView
+                    android:id="@+id/tv_live_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/common_text_gray_dark"
+                    android:textSize="@dimen/common_text_size_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--底部未开始游戏layout-->
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/ln_live_start_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@color/app_login_title_color"
+            >
+
+            <LinearLayout
+                android:id="@+id/ln_live_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/yz_live_bottom_detail"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:text="发言"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_live_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/yz_live_start_game_icon"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_live_game_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@mipmap/ic_price"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_start_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="开始游戏"
+                        android:textColor="#ff336a" />
+                </LinearLayout>
+       <LinearLayout
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+       </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_live_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/yz_live_bottom_detail"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@mipmap/live_chongzhi"
+                    android:text="充值"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

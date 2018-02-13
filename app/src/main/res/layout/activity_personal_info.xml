@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_bg_white"
+              android:orientation="vertical">
+
+    <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"/>
+
+    <LinearLayout
+        android:id="@+id/ln_personal_info_avatar"
+        style="@style/common_item_layout"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_vertical_padding_normal"
+        android:paddingTop="@dimen/common_vertical_padding_normal">
+
+        <TextView
+            style="@style/common_item_left_tv"
+            android:text="头像"/>
+
+        <com.ydd.pockettoycatcherrwz.widget.RoundedCPImageView
+            android:id="@+id/iv_personal_info_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitCenter"
+            app:frame_oval="true"/>
+
+        <ImageView
+            style="@style/common_item_right_arrow"/>
+    </LinearLayout>
+
+    <View
+        style="@style/common_divider_horizontal_gray"
+        android:layout_height="20dp"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ln_personal_info_nickname"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/common_item_left_tv"
+            android:text="昵称"/>
+
+        <TextView
+
+            android:id="@+id/tv_personal_info_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/common_text_size_normal"/>
+
+        <ImageView
+            style="@style/common_item_right_arrow"/>
+    </LinearLayout>
+    <!--<View-->
+        <!--android:visibility="gone"-->
+        <!--style="@style/common_divider_horizontal_gray"-->
+        <!--android:layout_marginLeft="@dimen/common_horizontal_padding_normal" />-->
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--style="@style/common_item_layout">-->
+
+        <!--<TextView-->
+            <!--style="@style/common_item_left_tv"-->
+            <!--android:text="性别"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:textColor="@color/common_text_gray"-->
+            <!--android:textSize="@dimen/common_text_size_normal"/>-->
+
+        <!--<ImageView-->
+            <!--style="@style/common_item_right_arrow"/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--style="@style/common_divider_horizontal_gray"-->
+        <!--android:layout_marginLeft="@dimen/common_horizontal_padding_normal" />-->
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--style="@style/common_item_layout">-->
+
+        <!--<TextView-->
+            <!--style="@style/common_item_left_tv"-->
+            <!--android:text="所在地"/>-->
+
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:textColor="@color/common_text_gray"-->
+            <!--android:textSize="@dimen/common_text_size_normal"/>-->
+
+        <!--<ImageView-->
+            <!--style="@style/common_item_right_arrow"/>-->
+    <!--</LinearLayout>-->
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_gray"/>
+</LinearLayout>

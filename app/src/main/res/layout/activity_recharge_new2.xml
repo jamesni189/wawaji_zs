@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_login_title_color"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.home.Recharge_newActivity">
+
+ <!--   <com.ydd.pockettoycatcherrwz.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        style="@style/common_title_bar" />-->
+
+    <RelativeLayout
+        android:background="@color/app_login_title_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/title_back"
+            android:src="@mipmap/ic_title_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/wb_title"
+            android:textSize="16dp"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_exchange"
+            android:layout_marginRight="10dp"
+            android:text="兑换记录"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_margin="5dp"
+         android:padding="10dp"
+         android:background="@drawable/shape_home_border"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/tv_vip_tips"
+             android:text="超值会员"
+             android:textColor="@color/sign_addview_text_yellow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <LinearLayout
+             android:layout_below="@+id/tv_vip_tips"
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_height="120dp">
+             <com.ydd.pockettoycatcherrwz.view.VipInfoView
+                 android:id="@+id/view_week"
+               android:layout_weight="1"
+                 android:layout_marginRight="5dp"
+                 android:layout_width="0dp"
+                 android:layout_height="120dp"/>
+             <com.ydd.pockettoycatcherrwz.view.VipInfoView
+                 android:id="@+id/view_month"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="5dp"
+                 android:layout_width="0dp"
+                 android:layout_height="120dp"/>
+         </LinearLayout>
+
+
+     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/shape_home_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_vip_tips2"
+            android:text="钻石充值"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/common_bg_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <GridView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recharge_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_title_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:horizontalSpacing="25dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"/>
+    </LinearLayout>
+</LinearLayout>

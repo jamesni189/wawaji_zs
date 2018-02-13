@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.ydd.pockettoycatcherrwz.ui.home.RankingActivity">
+
+    <LinearLayout
+        android:id="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/app_login_title_color">
+        <ImageView
+            android:id="@+id/title_back"
+            android:src="@mipmap/ic_title_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/btn_manito"
+            android:text="大神榜"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/btn_richer"
+            android:text="土豪榜"
+            android:textColor="@color/common_text_gray"
+           android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/bwView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.github.lzyzsd.jsbridge.BridgeWebView>
+  <FrameLayout
+      android:id="@+id/layout_frame"
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+</LinearLayout>

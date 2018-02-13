@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/adressdawable"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/tv_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_vertical_padding_normal"
+            android:paddingLeft="@dimen/common_horizontal_padding_normal"
+            android:paddingRight="@dimen/common_horizontal_padding_normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding_normal"
+            android:paddingRight="@dimen/common_horizontal_padding_normal"
+            android:paddingTop="@dimen/common_vertical_padding_normal">
+
+            <TextView
+                android:textColor="@color/common_text_6"
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <TextView
+                android:textColor="@color/common_text_6"
+                android:paddingLeft="50dp"
+                android:id="@+id/tv_item_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+        <View
+            style="@style/common_divider_horizontal_gray"
+            android:layout_marginTop="@dimen/common_vertical_padding_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_horizontal_padding_normal"
+            android:paddingRight="@dimen/common_horizontal_padding_normal">
+
+            <ImageView
+                android:id="@+id/iv_item_default"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+
+                android:textColor="#969696"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="默认地址"
+
+                android:textSize="14sp" />
+            <ImageView
+                android:src="@mipmap/adress_icon_edit"
+                android:layout_width="20dp"
+                android:layout_height="33dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:textColor="#969696"
+                android:id="@+id/tv_item_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="编辑"
+                android:textSize="14sp" />
+            <ImageView
+                android:paddingRight="5dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/adress_icon_delte"
+                android:layout_width="20dp"
+                android:layout_height="33dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:textColor="#969696"
+                android:id="@+id/tv_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="删除"
+                android:textSize="@dimen/common_text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

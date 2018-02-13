@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-fragment-25.3.0_aeda2e621d049b4a5308f49b570b1792f32ba48a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.tony19\apktool-lib\1.4.4-3\1d0125bf578cb30dd192496db56c2d937495248a\apktool-lib-1.4.4-3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d0125bf578cb30dd192496db56c2d937495248a">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\apktool-lib-1.4.4-3_09744462121659eedf08baf583f7ada6ec4a6989.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.1.0-RC\ac17fb1fb5fc5f0e7c5a4e2bccfb73e216fd32c0\eventbus-3.1.0-RC.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ac17fb1fb5fc5f0e7c5a4e2bccfb73e216fd32c0">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\eventbus-3.1.0-RC_3ec795fd3287ed791acfde031d810f5e595e5c91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-media-compat-25.3.0_e12176ac20e25557c9578510e3974f4426a2217e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-core-utils-25.3.0_313df373b2311d45a8cf294666acc311cbb6322f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.github.lzyzsd\jsbridge\1.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="911a9db6944602599b211f8c2822581067476288">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.github.lzyzsd-jsbridge-1.0.4_e89fe074599b80a8b42711a7de8627e05116b6c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-recyclerview-v7-25.3.0_b3d295b6be7fe8fc08155f5eba9d78a18cc34c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\jcore-android-1.1.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e38434d177c7e2ad13524529f2a0874cad828323">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\jcore-android-1.1.7_6d8795a1202e2466e741d78444d3c1ef6cddd597.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\umeng-analytics-7.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb6afca3873205378c0ecba64688b2b33115d7e3">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\umeng-analytics-7.4.0_f0b4830ddc20382fe005bc033f23208d2d65e4b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.github.ctiao\DanmakuFlameMaster\0.9.16\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="01a78a00e67c0b178988a719f3d200d45c023db5">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.github.ctiao-DanmakuFlameMaster-0.9.16_90930d2a2a000732f478550d350539d9c2ea7024.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.tencent.mm.opensdk\wechat-sdk-android-without-mta\5.1.4\4a65d54e456cd2a0ef32dde023ce206753bfb518\wechat-sdk-android-without-mta-5.1.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a65d54e456cd2a0ef32dde023ce206753bfb518">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\wechat-sdk-android-without-mta-5.1.4_c3ec0b96fbcabc78d2f9a3f050efdfcdab21fcf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support.constraint-constraint-layout-1.0.2_008b18b41f0f2012defc4dc5f14758d50e134956.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\universal-image-loader-1.9.3-with-sources_99ab178e29bee3343bb58ba44336327a12cf3411.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.2\3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf\gson-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\gson-2.8.2_6f92e0bc9cc6edb2f6dfe23a3b24d6c5a560f179.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\zegoliveroom.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a637068c0b20f9a39c3b5f0ec252e635a55cd41d">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\zegoliveroom_98806f3cc3a4d8f86e65166ab378b17da3567719.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-transition-25.3.0_233bcdea0e520540a43800460cdda710561cc874.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-core-ui-25.3.0_27f13304ed89a082e5bafb65068b2b23acf56aa8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.tony19\logback-android-core\1.1.1-4\cd422166cca6c3d930309a6685ea3f40c91942ce\logback-android-core-1.1.1-4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd422166cca6c3d930309a6685ea3f40c91942ce">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\logback-android-core-1.1.1-4_bb21e11b580b19a976527330329aa565cbb25e41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-v4-25.3.0_05d73a7827a2a11e85d0d73ffe41e6c0bf0dc922.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\constraint-layout-solver-1.0.2_69e89180a4d865ebff11250d4742ea295cbaecc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-appcompat-v7-25.3.0_a3d97a09e530ce3379b897e969eef7cfa548e768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\homhomlin.lib\apsts\1.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4428bb4b88f623baef1e538a7c8caf1c6badefbf">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\homhomlin.lib-apsts-1.8.0_45c2aaa5d9a87bd734e6b57032fa3406fdab0676.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\jpush-android-3.0.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89613f120c3b6a6c3ce0f75399d6eb95b9776e90">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\jpush-android-3.0.9_4a1aa92e6f75580c81786c387df68fbd4080019e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\wawaji\pulltorefresh\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="103c5d5a24a53dd8cdb23e9b290da11951dc643a">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\wawaji-pulltorefresh-unspecified_80a7f3d193ddc4f6922da87a8c07e53cf3f92f4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\alipaySdk-20170922.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a534fa553c844a7ef3475eada45f5a81a170f88">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\alipaySdk-20170922_a125bd91657719f8cf8ba97217b3250cf16a97ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-animated-vector-drawable-25.3.0_e895324c461bbb3af934d6b7111025215e829dc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-vector-drawable-25.3.0_9b85128dea69b5a0ea57b0cbc7780a4a8dcf747c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-support-compat-25.3.0_767e24c0567fdf96f32dc113d35b1c06ce84dd07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\umeng-common-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab7a563cbe3b2a1facc2661de695030e4cd46b68">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\umeng-common-1.4.0_604b2aafe1e00f03865ae0efc97139d1a709721c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\hyphenatechat_3.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="985fb57ea76f12495339d74e84f94989673688a1">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\hyphenatechat_3.3.6_cf8e9c2021e910e98edb41392d7c96ec8ca0c537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\mina-core-2.0.16.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f720f17643eaa7b0fec07c1d7f6272972c02bba4">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\mina-core-2.0.16_cb6df04e907c07f2b956bc739595d5c091fb5de9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.tony19\logback-android-classic\1.1.1-4\f20b1158fcca0aef6043886ef8605556a09058ca\logback-android-classic-1.1.1-4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f20b1158fcca0aef6043886ef8605556a09058ca">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\logback-android-classic-1.1.1-4_dba26344cdaecdaa7bd05b90ef6aeb5f1c7c9cd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\liji.library.dev\citypickerview\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3700463b9d623bd6eb8f58a9173e08a76f9bc397">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\liji.library.dev-citypickerview-2.1.0_1d44b1bc440ac50d7bd5b212d3eeac19f415d482.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\support-annotations-25.3.0_40eaf80908651eec7dcf5ecb728264d06e78c464.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\slf4j-api-1.7.21.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="139535a69a4239db087de9bab0bee568bf8e0b70">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\slf4j-api-1.7.21_c5ea0f495458ebbcc2e7df47cdd02d60e10c7ccd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\build\intermediates\exploded-aar\com.android.support\design\25.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\com.android.support-design-25.3.0_4a0d296ac84184537f74165dc600d5db1df5145b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\org.apache.http.legacy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\org.apache.http.legacy_cc72f7a36bfd647c2925b768fe4dd1ceb484443a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\open_sdk_r5886_lite.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c08b5431b3bdfc936fadc29001f30b847b34864">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\open_sdk_r5886_lite_3f44792ec1d004fccf846104bdcdff1d68e130b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\liteavsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e559556962c55a716758a42b706c93a1f120707">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\liteavsdk_14279ae2c107b1811354a1ea1c6816eb8e34a73e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\rwz\wawaji\app\libs\xutils_2067.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18aa3d6e5c58e1c97907bdb0a8ecb47eaccc9eeb">
+        <dex dex="E:\rwz\wawaji\app\build\intermediates\pre-dexed\_360\debug\xutils_2067_0d400540d9963d17f8e76b3d9d62f0148f7436f5.jar" />
+    </item>
+
+</items>
